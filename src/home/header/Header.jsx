@@ -1,12 +1,19 @@
 import classes from './Header.module.css'
 import { FaCirclePlay } from "react-icons/fa6";
 import { ImCheckboxChecked } from "react-icons/im";
+import learnLogo from './../../images/img_small.png';
+
+
+
 
 export default function HomeHeader(){
 
     return(
         <>
         <section className={classes.header}>
+
+            <img src={learnLogo} alt="learning logo" className={classes.learningLogo} />
+
             <div className={classes.header_box}>
                 <h1>Expert-Lab OneLine Learning</h1>
                 <p className={classes.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, unde. Rem eos iusto quos nam dignissimos iste quaerat cum. Magnam.
@@ -23,6 +30,7 @@ export default function HomeHeader(){
 
                 </div>
             </div>
+            
         </section>
         </>
     )

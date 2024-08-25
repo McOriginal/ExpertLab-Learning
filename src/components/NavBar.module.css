@@ -2,12 +2,13 @@
 
 .navBar{
     max-width: 90%;
-    height: 10vh;
+    /* height: 30vh; */
     display: grid;
     grid-template-columns: 5% 75% 8%;
     justify-content: center;
     align-items: center;
     margin: 1.5rem 1rem;
+    /* background: linear-gradient(var(--orangecolor), var(--lightorange)); */
 }
 
 .navBar ul{
