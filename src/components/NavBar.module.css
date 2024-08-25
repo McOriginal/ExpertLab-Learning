@@ -1,0 +1,236 @@
+
+
+.navBar{
+    max-width: 90%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 5% 75% 8%;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 1rem;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.navBar ul li{
+    list-style: none;
+    text-align: center;
+    margin: 0 0.8rem;
+}
+
+.navBar ul li a{
+    display: block;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 1.1rem;
+    color: var(--lightorange);
+    font-family: var(--font);
+    padding: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+.navBar ul li a:hover{
+    color: var(--textcolor);
+    font-weight: bold;
+    transform: scale(1.1);
+    border-bottom: 1px solid;    
+}
+
+.navBar img{
+    width: 130px;
+    text-align: left;
+    margin-left: -50%;
+}
+
+.navBar .btn_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-family: var(--font);
+    width: 135px;
+    padding: 12px ;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background: var(--bluecolor);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;    
+}
+
+
+.btn_login .arrow {
+    text-align: center;
+    display: block;
+    margin: 3px auto;
+}
+
+.btn_login:hover{
+    background: blue;
+    transform: scale(1.1);
+}
+
+.menu, .close, .login{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    
+    .navBar{
+        display: grid;
+        grid-template-columns: 5% 85% 5%;
+    }
+
+    .navBar img{
+        width: 100px;
+    }
+
+    .navBar ul{
+        margin: auto;
+
+    }
+
+    .navBar ul li a{
+        font-size: 0.7rem;
+        margin: 0 0.4rem;
+    }
+
+    .navBar .btn_login{
+        width: 95px;
+        padding: 8px 5px;
+        font-size: 0.6rem;
+    }
+}
+ 
+
+@media screen and (max-width: 750px) {
+
+   
+    .navBar img{
+        width: 95px;
+        margin-left: -20px;
+    }
+
+    .navBar ul {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .navBar ul li a{
+        margin: 0 1px;
+        text-align: center;
+    }
+
+}
+
+@media screen  and (max-width: 700px){
+
+    .navBar ul{
+       display: none;
+       width: 0%;
+       height: 0%;
+       opacity: 0;
+       transform: translateX(500px);
+       transition: all ease-in 0.7s;
+    }
+
+    .navBar ul li{
+        width: 100%;
+    }
+
+    .navBar ul li a{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-bottom: 2px solid  ;
+    }
+
+
+    .navBar .menu_active{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        background: var(--textcolor);
+        transform: translateX(0px);
+        opacity: 1;
+        z-index: 1;
+    }
+     .menu{
+        display: block;
+        position: absolute;
+        font-size: 1.3rem;
+        top: 9%;
+        right: 5%;
+        color: var(--bluecolor);
+    }
+
+
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 6%;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    .navBar .btn_login{
+        margin-right: 15%;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    
+    .navBar ul {
+        width: 100%;
+    }
+
+    .navBar {
+        display: block;
+    }
+
+
+   .navBar .btn_login{
+        display: none;
+    }
+
+    .navBar ul .login{
+        display: block;
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .menu{
+        top: 6%;
+    }
+
+}
