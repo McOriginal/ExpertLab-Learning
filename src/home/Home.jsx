@@ -1,3 +1,5 @@
+import Access from "./Access";
+import HowIsWork from "./HowIsWork";
 import Sponsors from "./Sponsors";
 import HomeHeader from "./header/Header";
 
@@ -9,6 +11,8 @@ export default function Home(){
         <>
         <HomeHeader />
         <Sponsors />
+        <HowIsWork />
+        <Access />
         </>
     )
 }

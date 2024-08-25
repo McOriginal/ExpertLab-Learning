@@ -19,15 +19,23 @@ export default function Sponsors(){
         <>
         <div className={classes.container}>
 
-           
+           <h1> Nos Partenaire</h1>
         <div className={classes.box_sponsors}>
-            <div className={classes.img_box}><img src={udemy} alt="logo sponsors" /></div>
+            {/* <div className={classes.img_box}><img src={udemy} alt="logo sponsors" /></div>
             <div className={classes.img_box}><img src={codeacademie} alt="logo sponsors" /></div>
             <div className={classes.img_box}><img src={openclassroom} alt="logo sponsors" /></div>
             <div className={classes.img_box}><img src={google} alt="logo sponsors" /></div>
             <div className={classes.img_box}><img src={orange} alt="logo sponsors" /></div>
             <div className={classes.img_box}><img src={coursera} alt="logo sponsors" /></div>
-            <div className={classes.img_box}><img src={W3Schools} alt="logo sponsors" /></div>
+            <div className={classes.img_box}><img src={W3Schools} alt="logo sponsors" /></div> */}
+           
+            <img src={udemy} alt="logo sponsors" />
+            <img src={codeacademie} alt="logo sponsors" />
+            <img src={openclassroom} alt="logo sponsors" />
+            <img src={google} alt="logo sponsors" />
+            <img src={orange} alt="logo sponsors" />
+            <img src={coursera} alt="logo sponsors" />
+            <img src={W3Schools} alt="logo sponsors" />
         </div>
         </div>
         </>
