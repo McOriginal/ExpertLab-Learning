@@ -1,6 +1,6 @@
 
 import classes from './Access.module.css';
-import accessImage  from'./../images/ilustration2.png';
+import accessImage  from'./../../images/ilustration2.png';
 import { ImCheckboxChecked } from "react-icons/im";
 
 

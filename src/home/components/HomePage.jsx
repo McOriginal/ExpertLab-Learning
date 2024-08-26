@@ -1,10 +1,11 @@
 import Access from "./Access";
 import HowIsWork from "./HowIsWork";
 import Sponsors from "./Sponsors";
-import HomeHeader from "./header/Header";
+import HomeHeader from "./Header";
+import LastCours from "./LatstCours";
 
 
-export default function Home(){
+export default function HomePage(){
 
 
     return(
@@ -13,6 +14,7 @@ export default function Home(){
         <Sponsors />
         <HowIsWork />
         <Access />
+        <LastCours />
         </>
     )
 }

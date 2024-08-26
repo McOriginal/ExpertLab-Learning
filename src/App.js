@@ -1,7 +1,7 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import MainHeader from './components/MainHeader';
-import Home from './home/Home';
+import HomePage from './home/components/HomePage';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
     children: [
        {
     path: '/',
-    element: <Home />
+    element: <HomePage />
   },
       
     ]

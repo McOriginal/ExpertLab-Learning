@@ -1,12 +1,12 @@
 import classes from './Sponsors.module.css';
 
-import google from './../images/google.png';
-import W3Schools from './../images/W3Schools.png';
-import codeacademie from './../images/codeacademie.png';
-import coursera from './../images/coursera.png';
-import orange from './../images/orange.png';
-import openclassroom from './../images/openclassroom.png';
-import udemy from './../images/udemy.png';
+import google from './../components/../../images/google.png'
+import W3Schools from './../components/../../images/W3Schools.png';
+import codeacademie from './../components/../../images/codeacademie.png';
+import coursera from './../components/../../images/coursera.png';
+import orange from './../components/../../images/orange.png';
+import openclassroom from './../components/../../images/openclassroom.png';
+import udemy from './../components/../../images/udemy.png';
 
 
 
