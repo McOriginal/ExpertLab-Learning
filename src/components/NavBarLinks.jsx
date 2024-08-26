@@ -28,7 +28,7 @@ export default function NavBarLinks(){
             <ul className={`${changeMenu ? classes.menu_active : undefined}`}>
             <IoMdCloseCircle className={classes.close}  onClick={closeMenu}/>
                 <li><NavLink href="/"> Accueil</NavLink></li>
-                <li><NavLink href="/"> Cours</NavLink></li>
+                <li><NavLink to="/cours"> Cours</NavLink></li>
                 <li><NavLink href="/"> Formateurs</NavLink></li>
                 <li><NavLink href="/"> Contacts</NavLink></li>
                 <IoMdLogIn className={classes.login} />

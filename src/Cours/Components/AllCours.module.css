@@ -1,0 +1,209 @@
+
+
+.header_text{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_text h1{
+    font-size: 2rem;
+    font-family: var(--titlefont);
+    color: var(--textcolor);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.header_text > p{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+    font-family: var(--font);
+    font-weight: 300;
+}
+
+
+.header_text  .inputbox{
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    margin: 1.5rem auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+}
+
+form{
+    margin: 0.2rem auto;
+    height: 60px;
+}
+
+
+.header_text  .inputbox input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin:  auto;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.header_text .inputbox input::placeholder{
+    font-size: 0.8rem;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 14px;
+}
+
+
+.header_text .categorie_btn{
+    width: 100%;
+    margin: 0.4rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+
+.header_text .categorie_btn button{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 0.6rem;
+    font-family: var(--font);
+    color: #000000;
+    font-weight: bold;
+    background: var(--lightorange);
+    margin: 0 0.4rem;
+    border-radius: 20px;
+}
+
+
+
+ .box_card{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+ .box_card .card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    /* height: 380px; */
+    background: #ffffff;
+    border: 1px solid var(--lightblue);
+    border-radius: 15px;
+
+}
+
+ .box_card .card .box_img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+.box_card .box_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_card .card .title{
+    font-size: 0.8rem;
+    font-family: var(--font);
+    color: #0a0a0a86;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.box_card .card .detail{
+    font-size: 0.7rem;
+    padding-left: 10px;
+    font-family: var(--font);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.box_card .card .lesson{
+    font-size: 0.7rem;
+    padding-left: 10px;
+    font-family: var(--font);
+    color: var(--lightblue);
+    padding: 10px 0 15px 10px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .header_text  .inputbox{
+        width: 350px;
+        height: 50px;
+    }
+
+    form{
+        height: 50px;
+    }
+
+    form input::placeholder{
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+
+
+    .header_text h1{
+        font-size: 1.2rem;
+    }
+
+    .header_text > p{
+        font-size: 0.6rem;
+    }
+    .header_text  .inputbox{
+        width: 210px;
+        height: 40px;
+    }
+
+    form{
+        height: 40px;
+        padding: 2px;
+        margin: 0px;
+    }
+
+    form input::placeholder{
+        font-size: 0.2rem;
+        height: 40px;
+        visibility: hidden;
+    }
+
+    .header_text .categorie_btn button{
+        margin: 0.3rem ;
+        font-size: 0.4rem;
+        height: 40px;
+    }
+}
+
+
