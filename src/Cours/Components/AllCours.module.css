@@ -1,5 +1,4 @@
 
-
 .header_text{
     width: 100%;
     margin: 0;
@@ -28,75 +27,52 @@
 }
 
 
-.header_text  .inputbox{
-    width: 400px;
-    height: 70px;
-    text-align: center;
-    margin: 1.5rem auto;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
-}
-
 form{
     margin: 0.2rem auto;
-    height: 60px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
 }
 
 
-.header_text  .inputbox input{
+.header_text   input{
     display: block;
     width: 100%;
     height: 100%;
     text-align: center;
-    margin:  auto;
+    margin: auto;
     padding: 20px;
     outline: none;
     border: none;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
 }
 
 
-.header_text .inputbox input::placeholder{
-    font-size: 0.8rem;
-    width: 100%;
-    height: 100%;
-    text-align: start;
+.header_text form input::placeholder{
+    font-size: 0.5rem;
+    text-align: left;
     padding: 14px;
 }
 
 
-.header_text .categorie_btn{
-    width: 100%;
-    margin: 0.4rem auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.header_text .categorie_btn button{
+form .searsh{
     display: block;
-    border: none;
-    outline: none;
-    padding: 15px;
-    font-size: 0.6rem;
-    font-family: var(--font);
-    color: #000000;
-    font-weight: bold;
-    background: var(--lightorange);
-    margin: 0 0.4rem;
-    border-radius: 20px;
+    position: relative;
+    margin-top: 0.4rem;
+    text-align: center;
+    right: 13%;
+    font-size: 1.5rem;
+    color: var(--bluecolor);
 }
-
-
 
  .box_card{
     width: 100%;
     margin: 10px auto;
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -186,16 +162,32 @@ form{
     }
 
     form{
-        height: 50px;
+        margin-bottom: 1.6rem;
     }
 
     form input::placeholder{
         font-size: 0.5rem;
     }
+
+    form .searsh{
+        bottom: 14%;
+    }
 }
 
 
-@media screen and (max-width: 300px) {
+
+
+
+@media screen and (max-width: 430px) {
+
+    form {
+        width: 350px;
+        margin: 1rem auto;
+    }    
+
+}
+
+@media screen and (max-width: 350px) {
 
 
     .header_text h1{
@@ -211,22 +203,31 @@ form{
     }
 
     form{
-        height: 40px;
-        padding: 2px;
-        margin: 0px;
+        width:  270px;
     }
 
-    form input::placeholder{
-        font-size: 0.2rem;
-        height: 40px;
-        visibility: hidden;
+    form .searsh{
+        font-size: 1rem;
+        margin-top: 0.7rem;
     }
 
-    .header_text .categorie_btn button{
-        margin: 0.3rem ;
-        font-size: 0.4rem;
-        height: 40px;
+
+    .box_card .card{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 200px;
+
     }
 }
 
 
+
+
+@media screen and (max-width: 280px) {
+    
+    form{
+        width: 95%;
+        padding: 3px;
+    }
+}

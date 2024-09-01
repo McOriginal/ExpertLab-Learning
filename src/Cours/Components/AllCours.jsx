@@ -1,6 +1,6 @@
 
 import classes from './AllCours.module.css';
-
+import { FaSearch } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 import Cours from './Cours';
 
@@ -52,25 +52,12 @@ const [cours, setCours] = useState([]);
             <h1>Tous nos cours</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-                    <div className={classes.inputbox}>
             <form action="">
                 <input type="search" name='recherche' placeholder='Chercher un cours...' />
+                <FaSearch className={classes.searsh} />
             </form>
-                    </div>
-            <div className={classes.categorie_btn}>
-                <button> toute les catégories</button>
-                <button> Développement web</button>
-                <button> Développement mobile</button>
-                <button> Data analyse</button>
-                <button> marketing digital</button>
-                <button> UI/UX</button>
-                <button> Graphisme</button>
-            </div>
 
             <div className={classes.box_card}>
-
-
-            {/* {cours.length === 0 && <p> Aucun cour disponible pour le moment</p> }  */}
             
             {cours.length >0 ? 
             cours.map((c) => (
