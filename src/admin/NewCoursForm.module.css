@@ -27,7 +27,7 @@
 
 .form_container .contact{
     width: 700px;
-    height: 430px;
+    height: 400px;
     margin: 0.2rem auto;
     display: flex;
     flex-direction: column;
@@ -76,20 +76,6 @@
     font-family: var(--font);
 }
 
-.input_box select{
-    display: block;
-    width: 100%;
-    padding: 10px;
-    outline: 1px solid var(--lightblue);
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contact select .item{
-    display: block;
-    font-family: var(--font);
-    font-size: 0.8rem;
-}
 
 
 .contact button{
@@ -98,11 +84,11 @@
     padding: 15px;
     font-size: 0.8rem;
     font-family: var(--font);
-    color: #000;
+    color: var(--bluecolor);
     margin: 0.4rem auto;
     text-align: center;
     font-weight: bold;
-    background: var(--lightblue);
+    background: transparent;
     border: 2px solid var(--bluecolor);
     border-radius: 10px;
     cursor: pointer;

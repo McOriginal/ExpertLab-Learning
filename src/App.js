@@ -16,13 +16,19 @@ function App() {
     path: '/',
     element: <HomePage />
   },
-    {
-    path: '/newcours',
-    element: <NewCoursForm />
-  },
+    
        {
     path: '/cours',
     element: <CoursPage />
+  },
+  
+  {
+    path: '/admin',
+    element: <NewCoursForm />
+  },
+    {
+    path: '/newCours',
+    element: <NewCoursForm />
   },
       
     ]

@@ -14,32 +14,24 @@ export default function NewCoursForm(){
                 <h1>Ajouter un cours</h1>
 
                 <div className={classes.contact}>
-                    <form action="">
-                        <div className={classes.input_box}>
-                            <select>
-                                <option className={classes.item}>Sélectionner une catégorie</option>
-                                <option className={classes.item} value=""> Développement web</option>
-                                <option className={classes.item} value=""> Graphisme</option>
-                                <option className={classes.item} value=""> Développement Mobile</option>
-                                <option className={classes.item} value=""> Marketing digital</option>
-                                <option className={classes.item} value=""> Data analyse</option>
-                                <option className={classes.item} value=""> UI/X</option>
-                            </select>
-                        </div>
+                    <form action="http://localhost:5000/newcours" method='POST'>
 
                         <div className={classes.input_box}>
-                            <input type="text" name="courName" placeholder='Nom du cours'/>
+                            <input type="text" name="title" placeholder='Nom du cours'/>
                         </div>
                         <div className={classes.input_box}>
-                            <input type="text" name="heure" placeholder="Nombre d'heure"/>
+                            <input type="text" name="detail" placeholder='Faite un petit détail du cours'/>
+                        </div>
+                        <div className={classes.input_box}>
+                            <input type="text" name="duree" placeholder="Nombre d'heure"/>
                         </div>
                         <div className={classes.input_box}>
                             <input type="text" name="lessons" placeholder='Nombe de lessons'/>
                         </div>
                         <div className={classes.input_box}>
-                            <input type="text" name="image" placeholder='Image url'/>
+                            <input type="text" name="imageUrl" placeholder='Image url'/>
                         </div>
-                        <button>Enregistrer</button>
+                        <button type='submit'>Enregistrer</button>
                     </form>
                 </div>
             </div>
